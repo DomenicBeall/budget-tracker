@@ -59,3 +59,7 @@ function updateDatabase() {
 }
 
 window.addEventListener("online", updateDatabase);
+
+request.onerror = error => {
+    console.error(error);
+}
