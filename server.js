@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin:S97dwciLmgfXCEhu@cluster0.4x76l.mongodb.net/budget?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://admin:yOGzdxDVhygG72RZ@cluster0.4x76l.mongodb.net/budget?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
