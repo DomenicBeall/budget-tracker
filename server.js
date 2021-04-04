@@ -3,7 +3,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect("mongodb+srv://admin:S97dwciLmgfXCEhu@cluster0.4x76l.mongodb.net/budget?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
